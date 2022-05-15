@@ -1,0 +1,95 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* HEADER SECTION */
+
+header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#navbar {
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-item {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#navbar ul li a {
+    display: block;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 0.6em;
+    width: 100%;
+  }
+  
+ #navbar ul li a:hover {
+    background-color: #555;
+    color: white;
+  }
+
+  .scrolled {
+    background-color: #242c3c;
+    z-index: 1;
+    transition: ease-in-out all .4s;
+    -moz-transition: ease-in-out all .4s;
+    -webkit-transition: ease-in-out all .4s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.scrolled nav ul li a {
+    color: #eaeaea;
+}
+
+  #main-image {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+  }
+
+/* ABOUT SECTION */
+
+#about {
+    height: 100vh;
+}
+
+/* GALLERY SECTION */
+
+
+
+/* WEEKLY SCHEDULE SECTION */
+
+
+
+/* CONTACT SECTION */
