@@ -17,9 +17,9 @@
             <ul class="navbar-nav">
                 <li class="nav-item"><a href="#">Home</a></li>
                 <li class="nav-item"><a href="#about">About</a></li>
-                <li class="nav-item"><a href="#">Gallery</a></li>
-                <li class="nav-item"><a href="#">My Weekly Sechdule</a></li>
-                <li class="nav-item"><a href="#">Contact</a></li>
+                <li class="nav-item"><a href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a href="#schedule">Sechdule</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div id="main-image">
@@ -30,8 +30,79 @@
     </header>
 
     <section id="about">
-
+        <div class="container">
+            <h2>About me.</h2>
+            <div class="border"></div>
+            <p>Hi, my name is Roshan, I was born in Nepal, currently living in Australia, we moved to Australia in 2008. On my free time, I enjoy playing games, watching shows and coding. Some of my favourite games are:</p> 
+            <ol>
+                <li>GTA 5</li>
+                <li>Fifa 22</li>
+                <li>Cyberpunk 2077</li>
+                <li>Stardew Valley</li>
+                <li>Satisfactory</li>
+            </ol>
+            <p>I am currently studying Software Engineering at Academy XI. I'm looking to pursue a career in Web development. I have previously worked in range of fields, I have worked as an:</p>
+            <ul>
+                <li>Electrician Apprentice</li>
+                <li>Replenishment Team Member</li>
+                <li>IT Field Engineer</li>
+                <li>Customer Support Engineer - Licensing</li>
+            </ul>
+        </div>
     </section>
+
+    <section id="gallery">
+        <h2>Gallery.</h2>
+        <!-- Container for the image gallery -->
+    </section>
+
+    <section id="schedule">
+        <h2>Schedule.</h2>
+        <table cellspacing="0">
+            <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+            <tr>
+                <td>Gym 7am to 8:30am</td>
+                <td></td>
+                <td>Gym 7am to 8:30am</td>
+                <td></td>
+                <td>Gym 7am to 8:30am</td>
+                <td>Gym 7am to 8:30am</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Work 9am to 6pm</td>
+                <td>Work 9am to 6pm</td>
+                <td>Work 9am to 6pm</td>
+                <td>Work 9am to 6pm</td>
+                <td>Work 9am to 6pm</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td>Team meeting with UK 6:30pm to 7pm</td>
+                <td colspan="4"></td>
+            </tr>
+        </table>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact.</h2>
+        <form>
+            <input type="text" name="name" id="name" placeholder="Name...">
+            <input type="email" name="email" id="email" placeholder="Email...">
+            <input type="tel" name="tel" id="tel" placeholder="Phone number...">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter message..."></textarea>
+        </form>
+    </footer>
     <script src="./js/script.js"></script>
 </body>
 </html>

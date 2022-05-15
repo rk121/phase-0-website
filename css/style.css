@@ -4,6 +4,11 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
+    background-color: #242c3c;
+}
+
+body h2 {
+        font-size: 1rem;
 }
 
 html {
@@ -25,7 +30,7 @@ header {
 }
 
 #navbar {
-    width: 5rem;
+    width: 10%;
     height: 100vh;
     position: fixed;
 }
@@ -38,30 +43,29 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .nav-item {
     margin-top: auto;
     margin-bottom: auto;
+    padding: 10px 15px;
 }
 
 #navbar ul li a {
-    display: block;
     color: #fff;
-    padding: 8px 16px;
     text-decoration: none;
     font-size: 0.6em;
     width: 100%;
   }
   
- #navbar ul li a:hover {
+ #navbar .nav-item:hover {
     background-color: #555;
     color: white;
   }
 
   .scrolled {
     background-color: #242c3c;
-    z-index: 1;
     transition: ease-in-out all .4s;
     -moz-transition: ease-in-out all .4s;
     -webkit-transition: ease-in-out all .4s;
@@ -82,14 +86,106 @@ header {
 
 #about {
     height: 100vh;
+    display: flex;
+    /* background: rgb(29,32,41); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/about.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-size: 0.75rem;
+    align-items: center;
+}
+
+.container {
+    background: rgba(31, 37, 51, 0.5);
+    color: #fff;
+    text-align: left;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    box-shadow: rgba(36, 44, 60, 0.4) -5px 5px, rgba(36, 44, 60, 0.3) -10px 10px, rgba(36, 44, 60, 0.2) -15px 15px, rgba(36, 44, 60, 0.1) -20px 20px, rgba(36, 44, 60, 0.05) -25px 25px;
 }
 
 /* GALLERY SECTION */
+#gallery {
+    width: 90%;
+    height: 100vh;
+    margin-left: auto;
+    color: #fff;
+}
 
+#gallery h2 {
+    margin-top: 0px;
+    padding-top: 30px;
+    text-align: center;
+}
 
 
 /* WEEKLY SCHEDULE SECTION */
+#schedule {
+    display: block;
+    width: 90%;
+    height: 100vh;
+    margin-top: 30px;
+    margin-left: auto;
+    color: #fff;
+}
 
+#schedule h2 {
+    margin-top: 0px;
+    padding-top: 30px;
+    text-align: center;
+}
 
+#schedule table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    margin-top: auto;
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+ #schedule td, th {
+    text-align: left;
+    padding: 8px;
+  }
+
+  #schedule tr {
+      color: #000;;
+  }
+  
+  #schedule tr:nth-child(even) {
+    background-color: #FFFFFF;
+  }
+
+  #schedule tr:nth-child(odd) {
+    background-color: #F1F7ED;
+  }
+
+  #schedule th {
+      background-color: #8789C0;
+      color: #fff;;
+  }
 
 /* CONTACT SECTION */
+#contact {
+    width: 90%;
+    height: 100vh;
+    margin-top: 30px;
+    margin-left: auto;
+    color: #fff;
+}
+
+#contact h2 {
+        margin-top: 0px;
+        padding-top: 30px;
+        text-align: center;
+
+}
