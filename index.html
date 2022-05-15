@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/aff18c4a0c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d229a77dec.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
                 <li class="nav-item"><a href="#">Home</a></li>
                 <li class="nav-item"><a href="#about">About</a></li>
                 <li class="nav-item"><a href="#gallery">Gallery</a></li>
-                <li class="nav-item"><a href="#schedule">Sechdule</a></li>
+                <li class="nav-item"><a href="#schedule">Schedule</a></li>
                 <li class="nav-item"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -53,11 +53,18 @@
 
     <section id="gallery">
         <h2>Gallery.</h2>
-        <!-- Container for the image gallery -->
+        <p>Some pictures I have taken during my travels.</p>
+        <div class="gallery-img">
+            <a href="./images/gallery/batesman-bay.jpg" target="_blank" rel="noopener noreferrer"><img src="./images/gallery/batesman-bay.jpg" alt="Batesman Bay NSW"></a>
+            <a href="./images/gallery/canberra.jpg" target="_blank" rel="noopener noreferrer"><img src="./images/gallery/canberra.jpg" alt="Canberra ACT"></a>
+            <a href="./images/gallery/la-perouse.jpg" target="_blank" rel="noopener noreferrer"><img src="./images/gallery/la-perouse.jpg" alt="Snowy Moutains NSW"></a>
+            <a href="./images/gallery/mustang.JPG" target="_blank" rel="noopener noreferrer"><img src="./images/gallery/mustang.JPG" alt="Mustang Nepal"></a>
+        </div>
     </section>
 
     <section id="schedule">
-        <h2>Schedule.</h2>
+        <h2>Schedule</h2>
+        <p>My weekly schedule.</p>
         <table cellspacing="0">
             <tr>
                 <th>Monday</th>
@@ -95,13 +102,27 @@
     </section>
 
     <footer id="contact">
-        <h2>Contact.</h2>
-        <form>
-            <input type="text" name="name" id="name" placeholder="Name...">
-            <input type="email" name="email" id="email" placeholder="Email...">
-            <input type="tel" name="tel" id="tel" placeholder="Phone number...">
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter message..."></textarea>
-        </form>
+        <h2>Get in touch!</h2>
+        <p>Contact me using the form below or the contact info below.</p>
+        <div class="flexContact">
+            <div class="addressWrap">
+                <div class="address">
+                    <p><i class="fa-solid fa-location-dot"></i></p>
+                    <p class="row">Sydney, NSW, Australia</p>
+                    <p><i class="fa-solid fa-mobile"></i></p>
+                    <p class="row">0401 551 500</p>
+                    <p><i class="fa-solid fa-at"></i></p>
+                    <p class="row">roshankhadka613@gmail.com</p>
+                </div>
+            </div>
+            <form>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Name...">
+                <input type="tel" name="tel" id="tel" class="form-control" placeholder="Phone number...">
+                <input type="email" name="email" id="email" class="form-control" placeholder="Email...">
+                <textarea name="message" id="message" class="form-control" cols="30" rows="10" placeholder="Enter message..."></textarea>
+                <button type="submit" class="btn-primary">Send</button>
+            </form>
+        </div>
     </footer>
     <script src="./js/script.js"></script>
 </body>
