@@ -157,6 +157,11 @@ header {
     width: 600px;
     height: 350px;
     object-fit: cover;
+    transition: transform .5s ease-in-out;
+}
+
+.gallery-img img:hover {
+    transform: scale(1.5);
 }
 
 
